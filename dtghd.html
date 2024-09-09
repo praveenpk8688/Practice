@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- // HTML -->
+    <!-- <div class="myDiv">This is a div.</div>
+    -->
+    <!-- <div id="elementToRemove">This element will be removed1.</div>
+    <div id="elementToRemove1">This element will be removed.</div>
+     -->
+     <div class="myDiv">Another div.</div>
+    <div class="myDiv">Another div j</div>
+    <div class="myDiv1">Another div j</div>
+    <script>
+      
+        // // JavaScript
+        const divs = document.getElementsByClassName("myDiv");
+        for (let i = 0; i < divs.length; i++) {
+        divs[i].style.color = "blue";
+        }
+        // document.write(divs.length);
+        // HTML
+
+
+// JavaScript
+const elementToRemove = document.getElementById("elementToRemove");
+elementToRemove.parentNode.removeChild(elementToRemove);
+
+    </script>
+</body>
+</html>

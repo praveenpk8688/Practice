@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS MY NUMBER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?&family=Montserrat&family=Honk&family=Bungee+Inline&family=Nabla&display=swap&family=Bungee+Shade&display=swap&family=Bungee+Spice&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="stylegmn.css">
+</head>
+<body>  
+    <section id="main_screen"" class="main_sec">
+        <header class="header">
+            <span class="name1">Can You</span>
+            <span class="name2">Guess !</span>
+            <span class="name3">My Number <span style="font-size: 40px;">🤔</span></span>
+            <p class="reset_h3"">If you want to Reset the Game,👉<button id="reset" class="reset">😂</button> 👈Hit Me</p>
+            <p class="para3">Score : <span id="score" class="score">10</span></p>
+
+        </header>
+        <div class="container">
+            <div >
+                <p class="para">Previous Score </p>
+                <span id="prev_score">None</span><br>
+            </div>
+            
+            <div class="computer"> 
+                <span id="com_num1"" class="com_num1"></span>
+                <span id="com_num2"" class="com_num2"></span>
+                <div class="computer1">
+                <p class="count"><span id="count" class="count_num">10 </span>out of 10</p>
+                <p class="para1">Enter your Number Between 1 to 10</p>
+                <input type="number" id="guess_input" class="guess_input" placeholder="Enter your Number to guess"><br>
+                <p id="pls_enter" class="para1"></p>
+                <button  id="check" class="check">Check</button>
+                <button id="play_again" class="play_again">Play Again</button>
+                </div>
+            </div>
+            <div>
+                <p class="para"></p>
+                <p id="emoji1" class="emoji1"></p>
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="comment_p1"></p>
+           <p class="comment_p2" id="comment_p2"  ></p>
+
+        </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown_Menu_js</title>
+</head>
+<body>
+    <select name="Course_Names"style="width:8em" id="Course"></select>
+    <select name="Duration" id="Duration"></select>
+    <select name="Places"style="width:8em" id="Places"></select>
+    <script>
+        let Course="<option >Select Course</option>";
+        let Duration="<option>Select Duration</option>";
+        let Places="<option>Select Places</option>";
+        let ListofCourse=["Java FullStack","Python FullStack",
+                        "MERN FullStack","MEAN FullStack",
+                        "Cybersecurity","Cloud Computing",
+                        "Data Science","AWS Course",
+                        "Artificial Intelligence",
+                        "Machine Learning","DevOps",
+                        "Internet of Things",];
+        let ListofDuration=[1,2,3,4,5,6,7,8,9,10,11,12];
+        let ListofPlaces=["Agra","Bangalore","Beed","Chennai","Delhi",
+                        "Ernakulam","Hazaribag","Hyderabad",
+                        "kolkata","Lakshadweep",
+                        "Thiruvananthapuram",
+                        "Uttara Kannada",];
+        for(let i=0;i<12;i++){
+            Course+="<option style=''>"+ListofCourse[i]+"</option>";
+            Places+="<option>"+ListofPlaces[i]+"</option>";
+            Duration+="<option>"+ListofDuration[i]+"</option>";
+        }
+        document.getElementById("Course").innerHTML=Course;
+        document.getElementById("Places").innerHTML=Places;
+        document.getElementById("Duration").innerHTML=Duration;
+    </script>
+</body>
+</html>

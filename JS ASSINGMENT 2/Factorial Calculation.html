@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+        /*2. Factorial Calculation
+        ● Write a function that calculates the factorial of a given number using a loop.*/
+        let n=prompt("enter the number");
+        let result=1;
+        function fact(){
+            for(i=2;i<=n;i++){
+                result*=i;   
+        }
+        return "The factorial of "+n+" is "+ result + ".";
+    }
+    if(n<1){
+        result+=". "+"So,please enter a positive number greater than 2";
+         }
+    document.write(fact(n));
+</script>
+</body>
+</html>

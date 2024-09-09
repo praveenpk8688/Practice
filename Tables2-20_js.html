@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_2 to 20_Table</title>
+</head>
+<body>
+    <script>
+        // document.write("<table border='1px' >");//Creating of a table by using table tag
+        // document.write("<tr>");//assigning of rows
+        // for(i=2;i<=20;i++)//loop condition1 starts from here 
+        // {
+        //     document.write("<th>"+"Table of <br> "+i+"</th>");//table heading with Table of "Table Number"
+           
+        // }
+        // document.write("</tr>");//ending of rows
+        // for(j=1;j<=10;j++)//loop condition2 starts from here
+        // {
+        //     for(k=2;k<=20;k++)//loop condition3 starts from here
+        //     {
+        //     document.write("<td style='padding-right:14px;padding-left:14px;'>"+k+'x'+j+'='+k*j+"<br></td>");
+        //     //table expression with Table data and using  of some style tag.
+        //     }
+        //     document.write("</tr>");//ending of rows
+            
+        // }
+        // document.write("</table>");//ending of table
+
+
+
+
+
+
+        document.write("<table border='1px' >");
+        document.write("<tr>");
+        for(i=2;i<=20;i++)
+        {
+            document.write("<th>"+"Table of <br> "+i+"</th>");
+           
+        }
+        
+        document.write("</tr>");
+        for(j=1;j<=10;j++)
+        {
+            for(k=2;k<=20;k++)
+            {
+            document.write("<td style='padding-right:14px;padding-left:14px;'>"+k+'x'+j+'='+k*j+"<br></td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>

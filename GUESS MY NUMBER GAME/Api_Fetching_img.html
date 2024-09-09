@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API FETCHING IMG</title>
+    <style>
+        img{
+            width: 220px;
+            height: 240px;
+        }
+        button{
+            padding: 30px;
+            width: 890px;
+            font-size: xx-large;
+        }
+        .container{
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img>
+        <img>
+        <img>
+        <img >
+        <img>
+        <img>
+        <img>
+        <img>
+        <img>
+        <img>
+        <img>
+        <img><br>
+        <button id="btn" onclick="generate()" >Generate</button>
+    
+    </div>
+    <script>
+       let img=document.querySelectorAll('img');
+       let btn=document.querySelector('#btn');
+        async function generate() {
+            
+        for(let i=0;i<img.length;i++){
+        let promm=await fetch('https://dog.ceo/api/breeds/image/random');
+        let respo=promm.json();
+        respo.then(data=>{
+            img[i].setAttribute('src',data.message);
+            
+            })
+
+        }
+    };
+    // generate();
+    // async function generate() {
+    //     let myApi=await fetch('https://picsum.photos/v2/list');
+    //     let res=myApi.json();
+    //     res.then(data=>{
+    //         for(let i=0;i<img.length;i++){
+    //             img[i].setAttribute('src',data[i].download_url);
+    //         }
+    //     });
+    // }
+    // // console.log(generate());
+    
+    // generate();
+
+//     let img=document.querySelectorAll('img');
+//     let btn=document.querySelector('#btn');
+//     async function   generate(){
+//     for(let i=0;i<img.length;i++){
+//         let promm=await fetch('https://picsum.photos/id/280')
+//     .then(respo=>respo.json())
+//     .then(data=>{
+//         console.log(data);
+//         img[i].setAttribute('src',data.download_url);
+//         // console.log(data.download_url);
+//     })
+//     }
+// }generate();
+    
+    </script>
+</body>
+</html>

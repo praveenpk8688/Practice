@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Loops Assignment</title>
+</head>
+<body>
+    <script>
+        
+        /*1. Sum of Even Numbers
+            Write a function that returns the sum of all even numbers between 1 and a given integer n*/
+            let n=prompt("enter the number");
+            function sumOfEvenNumbers(){
+            let sum=0;
+            for(i=1;i<=n;i++){
+                if(i%2==0){
+                    sum+=i;
+                document.write(i+"<br>");    
+                }
+            }
+            return "Sum of Even Numbers :"+sum;
+        }
+        document.write(sumOfEvenNumbers());
+
+        
+    </script>
+</body>
+</html>

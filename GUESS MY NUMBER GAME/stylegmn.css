@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main_sec{
+    background-attachment: fixed;
+    height:60rem;
+    width: 100%;
+    background-image: url("BLUE.png");
+
+}
+ .header{
+    text-align: center;
+    display: grid;
+ }
+ .name1{
+        font-family: "Honk", system-ui;
+        font-optical-sizing: auto;
+        font-size: 30px;    
+ }
+ .name2{
+        text-align: center;
+        margin-top: -15px;
+        font-family: "Honk", system-ui;
+        font-optical-sizing: auto;
+        font-size: 40px;
+        font-style: normal;   
+ }
+ .name3{
+        text-align: center;
+        margin-top: -20px;
+        font-family: "Honk", system-ui;
+        font-optical-sizing: auto;
+        font-size: 50px;
+ }
+ .com_num1{
+        font-family: "Honk", system-ui;
+        font-optical-sizing: auto;
+        font-size: 120px;
+        font-style: normal;
+ } 
+ .com_num2{
+    font-size: 140px;
+    left: 18rem;
+    font-family: "Nabla", system-ui;
+ }
+ .count,.count_num{
+    font-family: "Bungee inline", sans-serif;
+    color: azure;
+    font-size: 40px;
+    font-style: normal; 
+ }
+ .count_num{
+   margin-left: m;
+ }
+ .computer{
+   margin-top: 100px;
+ }
+ .guess_input{
+    /* margin-bottom: 15px; */
+    margin-top: 10px;
+    padding: 15px;
+    box-shadow: 5px 6px 7px black;
+    border-radius: 10px;
+    font-size: 15px;   
+ }
+ .reset_h3,.comment_p1,.comment_p2{
+   font-size: 25px;
+   color: azure;
+   font-family: "montserrat", sans-serif;
+ }
+ .comment_p2{
+   font-size: 50px; 
+ }
+ .reset{
+    width: 50px;
+    margin-top: 20px;
+    box-shadow: 5px 6px 7px black;
+    background-color: rgba(27, 26, 26, 0.5);
+    font-family: "Bungee spice", sans-serif;
+    font-size: 35px;
+    border-radius: 50px;
+ }
+ .play_again,.check{
+   width: 155px;
+    padding: 8px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Bungee spice", sans-serif;
+    box-shadow: 5px 6px 7px black;
+    background-color: rgba(0, 0, 0, 0.226);
+ }
+ .check{
+    margin-left: 0px;
+ }
+ .para{
+    font-family: "Bungee Spice", sans-serif;
+        font-size: 20px;
+ }
+ .para1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: azure;
+    font-size: x-large;
+ }
+ #pls_enter{
+   color: rgb(255, 255, 255);
+   font-size: xx-large;
+   font-family: "montserrat", sans-serif;
+   margin-top: 10px;
+ }
+ #prev_score{
+   color: rgb(255, 255, 255);
+   font-size: xx-large;
+   font-family:"montserrat", sans-serif;
+ }
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 20rem 1fr;
+    margin-bottom: 17rem;
+    text-align:center;
+}
+.para3{
+   font-size: xx-large;
+   margin-top: 10px;
+   font-family: "Bungee spice", sans-serif;
+}
+    /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.comment_p1, .comment_p2{
+    text-align: center;
+}
+.emoji1, .emoji2, .emoji3, .emoji4{
+   font-size: 175px;
+   position: relative;
+   top: -30px;
+}
+
+
+/* RED
+    background-image: radial-gradient(circle, #ff0000, #c20023, #820327, #420f1d, #000000);
+    
+    green
+    background-image: radial-gradient(circle, #6fff00, #46cd2c, #279c32, #176d2e, #144123);
+
+    initial
+    background-image: radial-gradient(circle, #10beee, #229fbc, #2f808e, #336166, #314444);
+    */

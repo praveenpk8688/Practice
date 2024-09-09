@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            position: fixed;
+            left: 9.5rem;
+            width: 40rem;
+            height: 597px;
+            margin: 200px auto;
+            border: 2px solid ;
+            border-radius: 20px;
+        }
+        input{
+            padding: 7px;
+            border-radius: 9px;
+        }
+        #f_name{
+            width: 14rem;
+            margin-top: 30px;
+            margin-left:43px;
+            
+        }
+        #l_name{
+            width: 14rem;
+            left: 31rem;
+            position: fixed;
+            top: 297px;
+        }
+        #email{
+            width: 33rem;
+            margin-left: 44px;
+            position: fixed;
+            top: 23rem;
+            right: 200px;
+        }
+        #password{
+            width: 33rem;
+            margin-left: 44px;
+            position: fixed;
+            top:27rem;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(4, 0, 255);
+            display: flex;
+            justify-content: end;
+            top: 44rem;
+            left: 40rem;
+            position: fixed;
+            margin-right: 38px;
+        }
+        #signup{
+            width: 10rem;
+            margin-left: 240px;
+            position:fixed;
+            top: 31rem;
+        }
+       
+        #p1{
+            position: fixed;
+            top: 36rem;
+            left: 290px;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
+       #p_fname{
+        position: fixed;
+        top: 21rem;
+          margin-left: 50px;
+          color: red;
+          display: none;
+        }
+        #p_lname{
+            position: fixed;
+            top: 21rem;
+            color: red;
+            margin-left: 22rem;
+            display: none;
+        }
+        #p_email,#p_password{
+            color: red;
+            position: fixed;
+            top: 390px;
+            left: 13rem;
+            display: none;
+        }
+        #p_password{
+            position:fixed ;
+            top: 455px;
+            display: none;
+        }
+        h2{
+            padding: 0px;
+            margin: 0px;
+            margin-left: 240px;
+            text-align: center;
+        }
+        /* ---------------------LOGIN SECTION------------------------------------------------- */
+        #e_login{
+            width: 14rem;
+            margin-left:40px;
+            
+        }
+        #pwd_login{
+            width: 14rem;
+            margin-left: 120px;
+            position: fixed;
+            top: 40rem;
+            left: 380px;
+        }
+        #p_email1{
+            color: red;
+            position:fixed;
+            top: 41.5rem;
+            left: 12.5em;
+            display: none;
+            
+        }
+        #p_password1{
+            color: red;
+            position:fixed;
+            top: 41.5rem;
+            left: 32rem;
+            display: none;
+        }
+        #login{
+            width: 10rem;
+            margin-left: 240px;
+            position: fixed;
+            top: 45rem;
+            left: 10rem;
+        }
+        .signup{
+            position: fixed;
+            top:15rem;
+            border-radius: 20px 20px 0px 0px;
+            /* background-color: aqua; */
+        }
+        .login{
+
+            border-radius: 0px 0px 20px 20px;;
+            /* background-color:cornflowerblue; */
+        }
+        .login1{
+            /* position: relative; */
+            top: 40rem;
+            position: fixed;
+        }
+      
+
+    </style>
+</head>
+<body>
+    
+        <div class="main">
+       <section class="signup"">
+        <h2>Create an Account</h2>
+        <input type="text" name="text" id="f_name" placeholder="First Name"><br>
+        <span id="p_fname"">Please Enter Your First Name.</span>
+        <input type="text" name="text" id="l_name" placeholder="Last Name"><br><br>
+        <span id="p_lname">Please Enter Your Last Name.</span>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email or Phone Number">
+        <p id="p_email"">Please Enter Your Email or Phone Number.</p>
+        <input type="password" name="password" id="password" placeholder="Password">
+        <p id="p_password"">Please Enter Password.</p>
+        <input type="submit" value="Sign Up" id="signup" onclick="validation()">
+       </section>
+        <!-- <hr style="padding:0px;margin:0px;"><br> -->
+
+        <!-- LOGIN FORM -------------------------------------------------->
+        <section class="login">
+            <hr style="padding:0px;margin:0px;margin-top: 350px;">
+        <h3 id="p1">If you Already have an Account Login Here !</h3>
+       <section class="login1">
+        <input type="email" name="email-login" id="e_login" placeholder="Email or Phone Number">
+        <p id="p_email1">Please Enter Your Email or Phone Number.</p>
+        <input type="password" name="pwd-login" id="pwd_login" placeholder="Password">
+        <p id="p_password1"">Please Enter Your Password.</p>
+        <a href="#" >Forget Password ?</a>
+        <input type="submit" value="Login" id="login" onclick="validation()">
+       </section>
+        </section>
+    </div>
+
+   
+    <script>
+        function validation(){
+            let fname=document.getElementById("f_name").value;
+            let lname=document.getElementById("l_name").value;
+            let email=document.getElementById("email").value;
+            let password=document.getElementById("password").value;
+            let login_email=document.getElementById("e_login").value;
+            let login_password=document.getElementById("pwd_login").value;
+            if(fname==""){
+                document.getElementById("p_fname").style.display="block";
+            }else{
+                document.getElementById("p_fname").style.display="none";
+            }
+            if(lname==""){
+                document.getElementById("p_lname").style.display="block";
+            }else{
+                document.getElementById("p_lname").style.display="none";
+            }
+            if(email==""){
+                document.getElementById("p_email").style.display="block";
+            }else{
+                document.getElementById("p_email").style.display="none";
+            }
+            if(password==""){
+                document.getElementById("p_password").style.display="block";
+            }else{
+                document.getElementById("p_password").style.display="none";
+
+            }
+            if(login_email==""){
+                document.getElementById("p_email1").style.display="block";
+            }else{
+                document.getElementById("p_email1").style.display="none";
+            }
+            if(login_password==""){
+                document.getElementById("p_password1").style.display="block";
+            }else{
+                document.getElementById("p_password1").style.display="none";
+            } 
+                // document.getElementById("p_email1").style.display="none";
+                // document.getElementById("p_password").style.display="none";
+                // document.getElementById("p_fname").style.display="none";
+                // document.getElementById("p_lname").style.display="none";
+                
+            }
+
+            
+        
+        
+    </script>
+</body>
+</html>

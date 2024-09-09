@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*7. Fibonacci Sequence
+● Write a function that prints the first n numbers of the Fibonacci sequence using a loop.*/
+
+        let n=prompt("enter the number");
+        function fib(){
+            let a=0,b=1,c=0;
+            document.write("The Fibonacci Sequence of "+"'"+n+"th'"+" number are "+"<br>");
+            for(i=1;i<=n;i++){
+                document.write(a+" ");
+                c=a+b;
+                a=b;
+                b=c;
+            }
+        }
+        fib();
+    </script>
+</body>
+</html>
